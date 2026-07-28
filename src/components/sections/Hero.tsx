@@ -19,7 +19,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="text-5xl font-semibold tracking-tight sm:text-7xl"
+        className="font-serif italic text-6xl tracking-tight sm:text-8xl"
       >
         Nikson Andrew C
       </motion.h1>
