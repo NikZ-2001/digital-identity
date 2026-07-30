@@ -6,6 +6,7 @@ import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";
 import ThemeProvider from "@/components/layout/ThemeProvider";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import GradientBackground from "@/components/ui-custom/GradientBackground";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className="antialiased font-sans">
         <ThemeProvider>
           <SmoothScrollProvider>
+            <GradientBackground />
             <Navbar />
             {children}
             <Footer />

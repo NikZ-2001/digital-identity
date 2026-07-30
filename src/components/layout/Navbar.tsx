@@ -15,9 +15,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/80 backdrop-blur-md dark:border-neutral-800 dark:bg-black/80">
+    <header className="glass-card sticky top-0 z-50 w-full">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-lg font-semibold tracking-tight">
+        <Link href="/" className="gradient-text text-lg font-semibold tracking-tight">
           Nikson Andrew C
         </Link>
 
@@ -25,7 +25,7 @@ export default function Navbar() {
           <ul className="hidden gap-6 text-sm md:flex">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="text-neutral-600 transition-colors hover:text-black dark:text-neutral-400 dark:hover:text-white">
+                <Link href={link.href} className="text-neutral-600 transition-colors hover:text-accent-purple dark:text-neutral-400 dark:hover:text-accent-pink">
                   {link.label}
                 </Link>
               </li>
@@ -41,7 +41,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <ul className="flex flex-col gap-4 border-t border-neutral-200 px-6 py-4 md:hidden dark:border-neutral-800">
+        <ul className="flex flex-col gap-4 border-t border-neutral-200/50 px-6 py-4 md:hidden dark:border-neutral-800/50">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <Link href={link.href} onClick={() => setOpen(false)} className="block text-neutral-600 dark:text-neutral-400">

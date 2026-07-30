@@ -1,27 +1,27 @@
 export interface CareerItem {
   title: string;
   role: string;
+  period: string;
   description: string;
   tags: string[];
+  current?: boolean;
 }
 
 export const CAREER_ITEMS: CareerItem[] = [
   {
-    title: "MENTASTIC",
-    role: "Founder & Developer",
-    description: "A men's fashion brand based in Anna Nagar, Chennai. Built as a full-stack e-commerce platform with a storefront, admin dashboard, POS, and payment integration.",
-    tags: ["Next.js", "NestJS", "Prisma", "PostgreSQL"],
+    title: "NatWest",
+    role: "Customer Experience Associate",
+    period: "August 2022 — Present",
+    description: "Working in customer experience, handling client interactions and building strong communication and problem-solving skills alongside my development work.",
+    tags: ["Customer Experience", "Banking", "Communication"],
+    current: true,
   },
   {
     title: "StationX",
-    role: "Founder & Developer",
-    description: "A premium print and delivery service in Ambattur, Chennai. Built as a frontend website with service booking, pricing, and delivery area search.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    title: "Pink Heart Studio",
-    role: "Founder & Developer",
-    description: "A nail art and home nail service business in Chennai. Built with a booking system, gallery, and WhatsApp integration.",
-    tags: ["Next.js", "Tailwind CSS v4"],
+    role: "Founder",
+    period: "May 2026 — Present",
+    description: "A premium print and delivery service in Ambattur, Chennai that I founded and built myself. My dream project — the long-term goal is to grow it into a well-known brand.",
+    tags: ["Founder", "Print & Delivery"],
+    current: true,
   },
 ];
