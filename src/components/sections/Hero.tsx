@@ -38,17 +38,23 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="mt-10 flex gap-4"
+        className="mt-10 flex flex-wrap justify-center gap-4"
       >
         <Link
           href="/about"
-          className="rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-80 dark:bg-white dark:text-black"
+          className="rounded-full bg-gradient-to-r from-accent-purple via-accent-pink to-accent-blue px-6 py-3 text-sm font-medium text-white shadow-lg shadow-purple-500/20 transition-transform hover:scale-105"
         >
           About Me
         </Link>
         <Link
+          href="/career"
+          className="glass-card rounded-full px-6 py-3 text-sm font-medium transition-transform hover:scale-105"
+        >
+          Career
+        </Link>
+        <Link
           href="/contact"
-          className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-medium transition-colors hover:border-black dark:border-neutral-700 dark:hover:border-white"
+          className="glass-card rounded-full px-6 py-3 text-sm font-medium transition-transform hover:scale-105"
         >
           Contact
         </Link>

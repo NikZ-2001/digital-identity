@@ -10,10 +10,10 @@ export default function AboutPage() {
         <ScrollReveal>
           <h1 className="text-4xl font-semibold tracking-tight">About Me</h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-600 dark:text-neutral-400">
-            I'm Nikson, a developer and founder based in Chennai, India. I build full-stack and frontend applications from scratch, and run a few ventures of my own — including MENTASTIC, a men's fashion brand, StationX, a print and delivery service, and Pink Heart Studio, a nail art and home nail service business.
+            By profession, I work in customer experience, but outside work I'm always exploring something new. I enjoy building websites, growing my business StationX, playing games, reading books, working out, trying new recipes, and learning skills one step at a time.
           </p>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-600 dark:text-neutral-400">
-            Outside of work, my life is made up of a lot of smaller things — explore them below.
+            This website is a collection of the things I'm passionate about. If we share an interest, feel free to reach out. I'd love to connect.
           </p>
         </ScrollReveal>
 
