@@ -2,9 +2,11 @@ import ContactForm from "@/components/sections/ContactForm";
 import ContactLinkCard from "@/components/ui-custom/ContactLinkCard";
 import ScrollReveal from "@/components/layout/ScrollReveal";
 import { CONTACT_LINKS } from "@/data/contact";
+import PageTransition from "@/components/layout/PageTransition";
 
 export default function ContactPage() {
   return (
+    <PageTransition>
     <main className="mx-auto max-w-3xl px-6 py-24">
       <ScrollReveal>
         <h1 className="gradient-text text-4xl font-semibold tracking-tight">Contact</h1>
@@ -21,5 +23,6 @@ export default function ContactPage() {
         <ContactForm />
       </ScrollReveal>
     </main>
+    </PageTransition>
   );
 }

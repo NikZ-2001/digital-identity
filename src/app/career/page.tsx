@@ -1,9 +1,11 @@
 import TimelineItem from "@/components/ui-custom/TimelineItem";
 import ScrollReveal from "@/components/layout/ScrollReveal";
 import { CAREER_ITEMS } from "@/data/career";
+import PageTransition from "@/components/layout/PageTransition";
 
 export default function CareerPage() {
   return (
+    <PageTransition>
     <main className="mx-auto max-w-3xl px-6 py-24">
       <ScrollReveal>
         <h1 className="gradient-text text-4xl font-semibold tracking-tight">Career</h1>
@@ -20,5 +22,6 @@ export default function CareerPage() {
         ))}
       </div>
     </main>
+     </PageTransition>
   );
 }

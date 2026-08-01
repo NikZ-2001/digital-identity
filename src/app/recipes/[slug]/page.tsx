@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { RECIPES } from "@/data/recipes";
 import ScrollReveal from "@/components/layout/ScrollReveal";
+import PageTransition from "@/components/layout/PageTransition";
 
 export default async function RecipeDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -10,6 +11,7 @@ export default async function RecipeDetailPage({ params }: { params: Promise<{ s
   if (!recipe) notFound();
 
   return (
+    <PageTransition>
     <main className="mx-auto max-w-2xl px-6 py-24">
       <ScrollReveal>
         <Link href="/recipes" className="text-sm text-neutral-500 hover:text-accent-purple">← Back to Recipes</Link>
@@ -42,5 +44,6 @@ export default async function RecipeDetailPage({ params }: { params: Promise<{ s
         </div>
       </ScrollReveal>
     </main>
+    </PageTransition>
   );
 }

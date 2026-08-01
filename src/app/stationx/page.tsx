@@ -1,7 +1,9 @@
 import ScrollReveal from "@/components/layout/ScrollReveal";
+import PageTransition from "@/components/layout/PageTransition";
 
 export default function StationXPage() {
   return (
+    <PageTransition>
     <main className="mx-auto max-w-3xl px-6 py-24">
       <ScrollReveal>
         <p className="text-sm uppercase tracking-widest text-neutral-500">Ambattur, Chennai</p>
@@ -14,5 +16,6 @@ export default function StationXPage() {
         </a>
       </ScrollReveal>
     </main>
+    </PageTransition>
   );
 }

@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <header className="glass-card sticky top-0 z-50 w-full">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="gradient-text text-lg font-semibold tracking-tight">
+        <Link href="/" className="gradient-text text-lg font-semibold tracking-tight transition-transform hover:scale-105">
           Nikson Andrew C
         </Link>
 
@@ -25,7 +25,7 @@ export default function Navbar() {
           <ul className="hidden gap-6 text-sm md:flex">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="text-neutral-600 transition-colors hover:text-accent-purple dark:text-neutral-400 dark:hover:text-accent-pink">
+                <Link href={link.href} className="relative text-neutral-600 transition-colors hover:text-accent-purple dark:text-neutral-400 dark:hover:text-accent-pink">
                   {link.label}
                 </Link>
               </li>
@@ -34,7 +34,7 @@ export default function Navbar() {
 
           <ThemeToggle />
 
-          <button onClick={() => setOpen(!open)} className="text-2xl md:hidden" aria-label="Toggle menu">
+          <button onClick={() => setOpen(!open)} className="text-2xl transition-transform hover:scale-110 md:hidden" aria-label="Toggle menu">
             <i className={open ? "bi bi-x-lg" : "bi bi-list"} />
           </button>
         </div>

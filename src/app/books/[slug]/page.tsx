@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { BOOKS } from "@/data/books";
 import ScrollReveal from "@/components/layout/ScrollReveal";
+import PageTransition from "@/components/layout/PageTransition";
 
 export default async function BookDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -10,6 +11,9 @@ export default async function BookDetailPage({ params }: { params: Promise<{ slu
   if (!book) notFound();
 
   return (
+    <PageTransition>
+
+   
     <main className="mx-auto max-w-2xl px-6 py-24">
       <ScrollReveal>
         <Link href="/books" className="text-sm text-neutral-500 hover:text-accent-purple">← Back to Books</Link>
@@ -36,5 +40,6 @@ export default async function BookDetailPage({ params }: { params: Promise<{ slu
         </div>
       </ScrollReveal>
     </main>
+     </PageTransition>
   );
 }

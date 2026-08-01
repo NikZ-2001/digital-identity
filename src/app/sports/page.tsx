@@ -1,9 +1,11 @@
 import ScrollReveal from "@/components/layout/ScrollReveal";
+import PageTransition from "@/components/layout/PageTransition";
 
 const SPORTS = ["Badminton", "Basketball", "Volleyball", "Cricket"];
 
 export default function SportsPage() {
   return (
+    <PageTransition>
     <main className="mx-auto max-w-3xl px-6 py-24">
       <ScrollReveal>
         <h1 className="gradient-text text-4xl font-semibold tracking-tight">Sports</h1>
@@ -17,5 +19,6 @@ export default function SportsPage() {
         </div>
       </ScrollReveal>
     </main>
+    </PageTransition>
   );
 }

@@ -1,7 +1,9 @@
 import ScrollReveal from "@/components/layout/ScrollReveal";
+import PageTransition from "@/components/layout/PageTransition";
 
 export default function GymPage() {
   return (
+    <PageTransition>
     <main className="mx-auto max-w-3xl px-6 py-24">
       <ScrollReveal>
         <h1 className="gradient-text text-4xl font-semibold tracking-tight">Gym</h1>
@@ -10,5 +12,6 @@ export default function GymPage() {
         </p>
       </ScrollReveal>
     </main>
+    </PageTransition>
   );
 }

@@ -16,7 +16,7 @@ export default function ThemeToggle() {
   }
 
   return (
-    <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 text-sm transition-colors hover:border-black dark:border-neutral-700 dark:hover:border-white" aria-label="Toggle theme">
+    <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 text-sm transition-all hover:scale-110 hover:border-accent-purple dark:border-neutral-700" aria-label="Toggle theme">
       <i className={theme === "dark" ? "bi bi-sun" : "bi bi-moon-stars"} />
     </button>
   );

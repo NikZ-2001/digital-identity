@@ -1,4 +1,5 @@
 import ScrollReveal from "@/components/layout/ScrollReveal";
+import PageTransition from "@/components/layout/PageTransition";
 
 const ARTWORKS = [
   { title: "Untitled Sketch 01", color: "from-accent-purple to-accent-pink" },
@@ -9,6 +10,7 @@ const ARTWORKS = [
 
 export default function ArtPage() {
   return (
+    <PageTransition>
     <main className="mx-auto max-w-3xl px-6 py-24">
       <ScrollReveal>
         <h1 className="gradient-text text-4xl font-semibold tracking-tight">Art</h1>
@@ -28,5 +30,6 @@ export default function ArtPage() {
         </div>
       </ScrollReveal>
     </main>
+    </PageTransition>
   );
 }

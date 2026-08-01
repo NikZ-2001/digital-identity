@@ -1,4 +1,5 @@
 import ScrollReveal from "@/components/layout/ScrollReveal";
+import PageTransition from "@/components/layout/PageTransition";
 
 const CONTENT_PLANS = [
   { title: "Work & Career", icon: "bi-briefcase" },
@@ -12,6 +13,7 @@ const CONTENT_PLANS = [
 
 export default function YouTubePage() {
   return (
+    <PageTransition>
     <main className="mx-auto max-w-3xl px-6 py-24">
       <ScrollReveal>
         <h1 className="gradient-text text-4xl font-semibold tracking-tight">YouTube</h1>
@@ -31,5 +33,6 @@ export default function YouTubePage() {
         </div>
       </ScrollReveal>
     </main>
+    </PageTransition>
   );
 }
